@@ -1,5 +1,52 @@
 ---
-
+const personal = {
+	avatar: "/images/avatar.jpg",
+	name: "Pham Thien Long",
+	title: "Website Developer"
+};
+const experiences = [
+	{
+		title: "Brigade 25",
+		timeline: {
+			from: "November 2023",
+			to: "January 2025"
+		},
+		position: "Clerical Assistant"
+	},
+	{
+		title: "STECH",
+		timeline: {
+			from: "September 2022",
+			to: "Febuary 2023"
+		},
+		position: "Backend Developer"
+	},
+	{
+		title: "Latte Games",
+		timeline: {
+			from: "November 2020",
+			to: "April 2021"
+		},
+		position: "Unity3D Developer"
+	},
+];
+const educations = [
+	{
+		title: "FPT Polytechnics",
+		timeline: {
+			from: "2021",
+			to: "2022"
+		},
+		position: "Website Developer"
+	}
+];
+const skills = {
+	programLanguages: [],
+	libraries: [],
+	tools: [],
+	databases: [],
+};
+const projects = [];
 ---
 
 <html lang="en">
@@ -8,9 +55,44 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>My Blog</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<div class="header-title">
+				pthieenlong
+			</div>
+			<navbar class="header-navbar">
+				<li><a href="#">Home</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/project">Projects</a></li>
+			</navbar>
+		</header>
+		<main class="container homepage">
+			<section class="hero-section">
+				<div class="hero-card hero-title">
+					<div class="hero-avatar">
+						<img src={personal.avatar} alt="personal-avatar">
+					</div>
+					<div class="hero-information">
+						<h2 class="hero-name">{personal.name}</h2>
+						<h4>{personal.title}</h4>
+					</div>
+				</div>
+				<div class="hero-card hero-detail">
+					<div class="hero-experience">
+						<h3>Experience</h3>
+						<ul class="hero-experience-list">
+							<li class="hero-experience-list-item">
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="main-section">
+
+			</section>
+		</main>
 	</body>
 </html>
